@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="exchange-consumer" />
+        <module name="queue-dto" />
+        <module name="simple-queue-consumer" />
+        <module name="simple-queue-producer" />
+        <module name="exchange-producer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="exchange-consumer" options="-parameters" />
+      <module name="exchange-producer" options="-parameters" />
+      <module name="simple-queue-consumer" options="-parameters" />
+      <module name="simple-queue-producer" options="-parameters" />
+    </option>
+  </component>
+</project>
